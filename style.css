@@ -1,0 +1,538 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container {
+    display: flex;
+}
+
+::selection {
+  background: #000000;
+  color: white;
+}
+
+
+.left-section {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 20%;
+    background-color: #E4F1FF;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+.logo img {
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin-bottom: 20%;
+}
+
+.menu {
+    display: block;
+
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.menu button {
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);
+    border: none;
+    color: #27005D;
+    margin-bottom: 10%;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 1s;
+}
+
+.menu button:hover{
+    zoom: 105%;
+    transition: 1s;
+}
+
+
+.settings {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#settings-btn{
+    background-color: #0057b300;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#settings-btn:hover{
+    zoom: 107%;
+    transition: 1s;
+}
+
+.right-section {
+
+    flex: 1;
+    padding: 20px;
+    color: #27005D;
+}
+
+h1{
+    color: #27005D;
+    font-size: 30px;
+}
+
+
+.rh-left{
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.rh-left h2{
+    font-size: 30px;
+}
+
+.rh-right{
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+
+#ill-home{
+    margin-top: -100px;
+    width: 300px;
+}
+span{
+    color: #9400FF;
+}
+
+b{
+    font-weight: 700;
+}
+
+.left-div {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.left-div h2{
+    margin-left: 40px;
+    font-size: 35px;
+}
+
+.right-div {
+    width: 50%;
+
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.home-section {
+    clear: both;
+    padding: 20px;
+}
+
+.home-section h2 {
+    font-size: 50px;
+    color: #333;
+}
+
+.home-section p {
+    color: #666;
+}
+
+.home-section img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#home-img{
+    margin-left: 200px;
+    width: 200px;
+    height: 180px;
+}
+
+.features-section {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background-color: #E4F1FF;
+    border-radius: 25px;
+}
+
+.feature-card {
+    display: inline-block;
+    background-color: #AED2FF;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+#home-txt{
+    font-size: 20px;
+}
+
+#start-btn{
+    width: 150px;
+    height: 47px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    border-radius: 35px;
+    border: 1px solid #9400FF;
+    color: #9400FF;
+    transition: 1s;
+
+}
+#start-btn:hover{
+    cursor: pointer;
+    background-color: #9400FF;
+    color: white;
+    transition: 1s;
+    box-shadow: 2px 2px 15px 4px rgb(212, 151, 255);
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.search-bar {
+    flex: 6; 
+    margin: -68px 0px 0px 120px; 
+    padding: 10px 0px 0px 20px;    
+}
+
+#searchbox{
+    width:320px;
+    height:40px;
+    padding: 0px 0px 0px 30px;
+    border-radius: 20px;
+}
+
+.linkmenu{
+    margin: 20px 8px 0px 45px;
+}
+
+.linkmenu a{
+    color: black;
+    padding: auto;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card {
+    width: 300px;
+    color: #27005D;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px #91fdf8bd;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 150px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #91fdf8;
+}
+
+.card-head{
+    color: #878787;
+    font-weight: 600;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 4%;
+    height: 22%;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background-color: #AED2FF;
+    color: white;
+    padding: 20px;
+}
+
+.section {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.section:hover {
+    background-color: #9400FF;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.chat {
+    background-color: #E4F1FF;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.chat-header {
+    background-color: #27005D;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#explore-container {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.379);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+}
+
+#user-name{
+    display: inline-block;
+    width: fit-content;
+}
+
+#user-dp{
+    display: inline-block;
+    width: 80px;
+}
+
+.user-heading h3{
+    font-weight: 200;
+    color: black;
+}
+
+.connections{
+    background-color: #AED2FF;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 320px;
+    height: 40px;
+}
+
+.connections p{
+    display: inline-flex;
+    width: fit-content;
+    margin-right: 100px;
+}
+
+.about-user{
+    margin-top: 40px;
+    height: 150px;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.about-user h2{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+
+.certi-user{
+
+    background-color: #E8C9FF;
+    height: 150px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.certi-user h2{
+    margin-left: 10px;
+}
+
+
+.buttons{
+    background: linear-gradient(to right, #B8DAFF, #D8EBFF, #AED5FF);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border:none;
+    border-radius: 90px;
+    width:190px;
+}
+
+.course_buttons{
+    justify-content: center; 
+    align-items: center;
+    padding:10px;
+}
+
+.upper-resource-block h2{
+text-align: center;
+font-size: 40px;
+font-family: Rubik;
+}
+
+.seach-in-resources{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+#resource-input{
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+#resource-search-btn{
+    font-family: ubuntu;
+    font-size: 17px;
+    transition: 0.4s;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 100px
+    
+}
+
+#resource-search-btn:hover{
+    background-color: #00000000;
+    border: 1.8px solid black;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.below-resource-block{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.one-rsc{
+    background-color: #CB9BFA;
+    color: #000000;
+}
+
+.two{
+    background-color: #000000;
+    color: white;
+}
+
+.three{
+    background-color: #F8FD91;
+    color: #000000;
+}
+
+.four{
+    background-color: #5ECCA0;
+    color: white;
+}

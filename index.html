@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techies-Edu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="./images/techies-trans-t.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <button id="home-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowHome()"><img style="width: 25px;margin:auto 10px auto 10px;"
+                        src="./images/teenyicons_home-outline.png" alt=""> Home</button>
+
+                <button id="courses-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowCourses()"><img style="width: 20px;margin:auto 20px auto 10px;"
+                        src="./images/books.png" alt="">Courses</button>
+
+                <button id="resource-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowResources()"><img style="width: 27px;margin:auto 10px auto 10px;"
+                        src="./images/collections_bookmark_FILL0_wght400_GRAD0_opsz24.svg" alt="">Resources</button>
+
+                <button id="chat-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowChats()"><img style="width: 25px;margin:auto 15px auto 10px;"
+                        src="./images/ph_chat-bold.png" alt="">Chat</button>
+
+                <button id="updates-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowUpdates()"><img style="width: 28px;margin:auto 10px auto 10px;"
+                        src="./images/ic_outline-tips-and-updates.png" alt="">Updates</button>
+
+                <button id="user-btn" style=" background-image: linear-gradient(to left, #AED2FF,#70B0FF,#AED2FF);"
+                    onclick="ShowUser()"><img style="width: 27px;margin:auto 10px auto 10px;"
+                        src="./images/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">User</button>
+
+            </div>
+            <div class="settings">
+                <button id="settings-btn"><img src="./images/Vector.png" alt=""></button>
+            </div>
+        </div>
+        <div class="right-section">
+
+            <section id="home" class="home">
+                <div class="left-div">
+                    <h2>A Platform Which Allows you to <br>
+                        <span>study, connect, Create</span> <br>
+                        & Develop Yourself in <br>
+                        <span>Your Regional language.</span></h2>
+                </div>
+                <div class="right-div">
+                    <img id="home-img" src="./images/home-jpg.jpg" alt="Image">
+                </div>
+
+                <div class="features-section">
+                    <h2>What you can do!</h2>
+                    <div class="feature-card">
+                        <img src="./images/books.png" alt="">
+                        <h3>Courses</h3>
+                        <p>Explore our courses</p>
+                    </div>
+                    <div class="feature-card">
+                        <img style="width: 40px;" src="./images/groups_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <h3>Relations</h3>
+                        <p>Build meaningful relationships</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="./images/ic_outline-tips-and-updates.png" alt="">
+                        <h3>Updates</h3>
+                        <p>Stay updated with the latest news</p>
+                    </div>
+                </div>
+                <p id="home-txt">Our web app is the perfect way to learn new skills, advance your career, and connect
+                    with other learners. We offer a wide range of courses on a variety of topics, and our community of
+                    learners is supportive and engaged.</p>
+                <button onclick="ShowCourses()" id="start-btn">Start learning</button>
+            </section>
+            <!--------------------------------------------------------------------------- -->
+
+            <section style="display: none;" id="courses" class="courses">
+                <h1>Courses</h1>
+                <div class="search-bar">
+                    <input type="text" id="searchbox" placeholder="Search for courses">
+                </div>
+
+                <h2>Recommended Courses</h2>
+                <div class="card-container">
+                    <a href="Google.com">
+                        <div class="card">
+                            <span class="card-head">Programming</span>
+                            <h2>Python Bootcamp</h2>
+                            <span>4 days</span>
+                            <p>~Adnan</p>
+                        </div>
+                    </a>
+                    <a href="Google.com">
+                        <div class="card">
+                            <span class="card-head">Programming</span>
+                            <h2>Web Development</h2>
+                            <span>1 Month</span>
+                            <p>~Vansham</p>
+                        </div>
+                    </a>
+
+                    <a href="Google.com">
+                        <div class="card">
+                            <span class="card-head">Creation</span>
+                            <h2>Content Creation</h2>
+                            <span>5 days</span>
+                            <p>~Nitesh</p>
+                        </div>
+                    </a>
+                    <a href="Google.com">
+                        <div class="card">
+                            <span class="card-head">Extra Skills</span>
+                            <h2>Drawing MasterClass</h2>
+                            <span>1 month</span>
+                            <p>~Priyanshi</p>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>Explore all the <b>fields</b></h2>
+                <div class="course_buttonsmenu">
+                    <input type="button" class="buttons" value="Management">
+                    <input type="button" class="buttons" value="Financial">
+                    <input type="button" class="buttons" value="Extra Skill">
+                    <input type="button" class="buttons" value="Agriculture">
+                </div>
+            </section>
+
+            <!--------------------------------------------------------------------------- -->
+
+            <section style="display: none;" id="resources" class="resources">
+                <H1>Resources</H1>
+                <div class="upper-resource-block">
+                    <h2>Empower Your Learning Journey: <br> Access a Wealth of Study and <br> Research Resources
+                    </h2>
+                    <div class="seach-in-resources">
+                        <input id="resource-input" type="text" placeholder="search resources"> <span><button
+                                id="resource-search-btn">Search </button></span>
+                    </div>
+                </div>
+
+                <div class="below-resource-block">
+                    <div class="resource-card one-rsc">
+                        <img src="./images/hello.png" alt="">
+                        <h3>Study Materials</h3>
+                    </div>
+
+                    <div class="resource-card two">
+                        <img src="./images/hehehhe.png" alt="">
+                        <h3>Discover Research Paper</h3>
+                    </div>
+
+                    <div class="resource-card three">
+                        <img src="./images/jadfn.png" alt="">
+                        <h3>Show Your Rearch</h3>
+                    </div>
+
+                    <div class="resource-card four">
+                        <img src="./images/Vector123.png" alt="">
+                        <h3>Your Guide</h3>
+                    </div>
+
+                </div>
+            </section>
+
+            <section style="display: none;" id="chat" class="chats-section">
+                <h1>Chats</h1>
+                <div class="container">
+                    <div class="sidebar">
+                        <div class="section" id="one-on-one-section">
+                            <img src="./images/person_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div class="section" id="community-section">
+                            <img src="./images/groups_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div class="section" id="video-conference-section">
+                            <img src="./images/video_camera_front_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="chat">
+                            <div class="chat-header">
+                                <h2>One-on-One Chat</h2>
+                            </div>
+                            <div class="chat-messages">
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Type your message...">
+                                <button>Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section style="display: none;" id="updates" class="updates">
+                <h1>Updates</h1>
+
+            </section>
+
+
+            <section style="display: none;" id="user" class="user">
+                <div class="user-id">
+                    <img id="user-dp" src="./images/WhatsApp Image 2023-09-19 at 9.01.50 PM-modified.png" alt="">
+                    <h2 id="user-name">vansham__kamboj</h2>
+                </div>
+                <div class="user-heading">
+                    <h3>ITMBU CSE 2YR | GDSC ITMBU Volunteer | Building @Techies-Edu |<br> Creator | Web Dev | Laravel
+                        PHP | Freelance</h3>
+                </div>
+
+                <div class="connections">
+                    <p>3rd Ranked</p> <span>300 Relations</span>
+                </div>
+
+                <div class="about-user">
+                    <h2>About</h2>
+                </div>
+                <div class="certi-user">
+                    <h2>Certificates</h2>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
